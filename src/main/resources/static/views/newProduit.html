@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="../css/myStyle.css" type="text/css"/>
+<div  class ="container spacer">
+<div class="panel panel-primary" ng-if="mode==0">
+<div class="panel-heading">Nouveau produit</div>
+<div class="panel-body">
+<form class="">
+<div class="form-group">
+<label class="control-label">
+Designiation  : 
+</label>
+<input class="form-control" type="text" ng-model="produit.designiation">
+</div>
+<div class="form-group">
+<label class="control-label">
+prix : 
+</label>
+<input class="form-control" type="text" ng-model="produit.prix">
+</div>
+
+<div class="form-group">
+<label class="control-label">
+Quantite  : 
+</label>
+<input class="form-control" type="text" ng-model="produit.quantite">
+</div>
+<button class="btn btn-primary" ng-click="addProduit()">Ajouter</button>
+</form> </div>
+
+</div>
+
+<div class="panel panel-info" ng-if="mode==1">
+<div class="panel-heading">Confirmation</div>
+<div class="panel-body">
+<label class="control-label">
+Id : {{produit.id}}
+</label>
+<br>
+<label class="control-label">
+Designiation  : {{produit.designiation}}
+</label>
+<br>
+<label>
+prix : {{produit.prix}}
+</label>
+<br>
+<label class="control-label">
+Quantite  : {{produit.quantite}}
+</label>
+<br>
+<button ng-click = "retourner()" class="btn btn-primary">Retour</button>
+</div>
+</div>
+</div>

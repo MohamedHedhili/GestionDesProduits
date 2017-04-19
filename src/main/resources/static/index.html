@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/myStyle.css" type="text/css"/>
+
+<title>Catalogue</title>
+</head>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="node_modules\angular-ui-router\release\angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<body ng-app="myApp" >
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+         <a class="navbar-brand" href="#"> Gestion Produits</a>
+   
+    
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active" ><a ui-sref="home">Home</a></li>
+      <li><a ui-sref="newProduit">Insert Produit</a></li>
+      <li><a ui-sref="chercherProduits">Chercher Produit</a></li>
+    </ul>
+  </div>
+</nav>
+<div ui-view></div>
+</body>
+</html>
